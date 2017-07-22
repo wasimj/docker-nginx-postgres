@@ -6,5 +6,7 @@ services:
      - "80:80"
     volumes:
      - .:/html
+    links:
+     - postgres
   postgres:
     image: "postgres"
